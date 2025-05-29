@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="api-filmes" />
+        <module name="cambio-service" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-filmes" options="-parameters" />
+      <module name="cambio-service" options="-parameters" />
       <module name="config-server" options="-parameters" />
     </option>
   </component>
