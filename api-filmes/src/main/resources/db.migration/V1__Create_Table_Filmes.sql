@@ -1,0 +1,7 @@
+﻿CREATE TABLE filme (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    diretor VARCHAR(180) NOT NULL,
+    launch_date DATE NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    name VARCHAR(250) NOT NULL
+);

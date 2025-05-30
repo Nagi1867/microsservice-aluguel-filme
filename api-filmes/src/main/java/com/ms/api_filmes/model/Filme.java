@@ -1,18 +1,29 @@
 package com.ms.api_filmes.model;
 
+import jakarta.persistence.*;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
+@Entity
 public class Filme implements Serializable {
-    private static final long SerialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "diretor", nullable = false, length = 180)
     private String diretor;
+    @Column(name = "launch_date", nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date launchDate;
+    @Column(nullable = false)
     private Double price;
+    @Column(nullable = false, length = 250)
     private String name;
+    @Transient
     private String currency;
+    @Transient
     private String environment;
 
     public Filme() {
