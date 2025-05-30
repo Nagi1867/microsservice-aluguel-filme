@@ -1,5 +1,6 @@
 package com.ms.api_filmes.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -7,6 +8,7 @@ import java.util.Date;
 import java.util.Objects;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Filme implements Serializable {
     private static final long serialVersionUID = 1L;
 
