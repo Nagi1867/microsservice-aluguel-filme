@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/api-filmes/pom.xml" />
         <option value="$PROJECT_DIR$/cambio-service/pom.xml" />
         <option value="$PROJECT_DIR$/naming-server/pom.xml" />
+        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
       </list>
     </option>
   </component>
