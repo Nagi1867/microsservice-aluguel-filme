@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.HashMap;
 
 @RestController
-@RequestMapping(value = "/filmes")
+@RequestMapping(value = "/api-filmes")
 public class FilmeController {
     @Autowired
     private Environment environment;
