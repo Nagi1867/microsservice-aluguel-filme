@@ -10,9 +10,6 @@ public class ApiGatewayConfiguration {
     @Bean
     public RouteLocator gatewayRouter(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route(p -> p.path("/get")
-                        .filters(f -> f.addRequestHeader("Hello", "World"))
-                        .uri("http://httpbin.org:80"))
                 .route(p -> p.path("/cambio-service/**").uri("lb://cambio-service"))
                 .route(p -> p.path("/api-filmes/**").uri("lb://api-filmes"))
                 .build();
